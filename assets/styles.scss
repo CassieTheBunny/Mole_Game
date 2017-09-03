@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/* -- Responsive -- */
+$screen-xs-min: 480px !default;
+$screen-sm-min: 768px !default;
+$screen-md-min: 992px !default;
+$screen-lg-min: 1200px !default;
+
+$screen-xs-max: ($screen-sm-min - 1) !default;
+$screen-md-max: ($screen-lg-min - 1) !default;
+
+/* -- Variables -- */
+$lt-gray: rgba(235, 235, 235, 1);
+$drk-gray: rgba(128, 128, 128, 1);
+$white: rgba(255, 255, 255, 1);
+$lt-blue: rgba(138, 213, 231, 1);
+$drk-blue: rgba(61, 157, 179, 1);
+
+$border: 1px solid $drk-gray;
+
+/* -- Responsive Mixin's -- */
+@mixin mobile { @media (max-width: $screen-xs-max) { @content; } }
+@mixin mobile-landscape { @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) { @content; } }
+@mixin tablet { @media (min-width: $screen-sm-min) and (max-width: $screen-md-max) { @content; } }
+@mixin tablet-landscape { @media (min-width: $screen-md-min) and (max-width: $screen-md-max) { @content; } }
+@mixin desktop { @media (min-width: $screen-lg-min) { @content; } }
+
+/* -- Main Styling Start... -- */
+body { background-color: $lt-gray; font-family: 'Raleway', verdana, sans-serif;
+  @include tablet { background-color: $white; }
+  @include mobile { background-color: $white; }
+}
+header { margin: 0 auto 5%;
+  @include tablet { margin-bottom: 2%; }
+  @include tablet-landscape { margin-bottom: 4%; }
+  @include mobile-landscape { margin-bottom: 3%; }
+  h1 { font-size: 1.5em; text-align: center; margin-bottom: 0; padding-bottom: 0;
+    @include mobile { font-size: 1.2em; }
+  }
+}
+footer { margin: 0 auto; font-size: .8em; max-width: 426px; text-align: center; line-height: 1.5;
+  @include mobile { font-size: .6em; }
+  a { color: $drk-blue; text-decoration: none; pointer: cursor;
+    &:hover { color: $lt-blue; }
+  }
+}
+
+.container {
+  margin: 1% auto 0;
+  max-width: 100%;
+  border: $border;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1% 3% 2%;
+  box-shadow: 2px 2px 5px $drk-gray;
+  background-color: $white;
+
+  @include desktop { max-width: 925px; }
+  @include tablet { max-width: 86%; border: none; box-shadow: none; }
+  @include mobile { border: none; box-shadow: none; }
+
+  .first, .second {
+    @include desktop { width: 50%; float: left; }
+    @include tablet { width: 100%; }
+    @include tablet-landscape { width: 50%; float: left;}
+    @include mobile { width: 100%; }
+    @include mobile-landscape { width: 50%; float: left; }
+  }
+
+  .second {
+    @include mobile { font-size: .9em; }
+  }
+
+  section { margin: 0 auto 2em; width: 100%;
+    h2 { font-size: 1.1em; margin-bottom: 0; margin-top: .5em; float: left; width: 100%; font-weight: normal; }
+    ul { padding-left: 1em; margin: 1em auto 2em; float: left; }
+    h2, ul { margin-left: 1em; }
+    span { font-size: 1.2rem; font-weight: bold; }
+
+    button {
+      width: 100%;
+      padding: 20px;
+      background-color: $lt-blue;
+      border: $border;
+      text-transform: uppercase;
+      font-size: 1em;
+
+      &:hover { cursor: pointer; }
+    }
+
+    p { display: block; float: left; width: 100%;
+      &.half { width: 50%; }
+      &.right { text-align: right; }
+      &.luck { color: $drk-blue; font-size: 1.2em; font-weight: bold; text-align: center;}
+      &.hidden { display: none; }
+      span { display: inline-block; color: $drk-blue; font-size: 1.2em;
+        &.timer { width: 60px; }
+        &.score { width: 20px; }
+      }
+    }
+
+    .grid { border: $border; padding: 5px; float: left; background-color: $white;
+      &.stop .grid-cell { opacity: .25; }
+      &-row { float: left; clear: left; }
+      &-cell {
+        @include desktop { width: 134px; height: 134px; }
+        @include tablet { width: 207px; height: 189px; }
+        @include tablet-landscape { width: 124px; height: 124px; }
+        @include mobile { width: 104px; height: 104px; }
+        @include mobile-landscape { width: 85px; height: 85px; }
+
+        margin: 1px;
+        border: $border;
+        display: inline-block;
+        float: left;
+        background-color: $white;
+        opacity: 1;
+        -webkit-transition: opacity 1s;
+        transition: opacity 1s;
+
+        &.active { background: url('assets/active.png'), $white; background-size: contain; background-position: center center;
+          &:hover { cursor: pointer; }
+        }
+      }
+    }
+  }
+}
+/* -- ...Main Styling End -- */
