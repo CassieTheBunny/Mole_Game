@@ -40,7 +40,7 @@ header { margin: 0 auto 5%;
 }
 footer { margin: 0 auto; font-size: .8em; max-width: 426px; text-align: center; line-height: 1.5;
   @include mobile { font-size: .6em; }
-  a { color: $drk-blue; text-decoration: none; pointer: cursor;
+  a { color: $drk-blue; text-decoration: none; pointer: cursor; font-weight: bold; 
     &:hover { color: $lt-blue; }
   }
 }

@@ -3,45 +3,53 @@
 /* -- Variables -- */
 /* -- Responsive Mixin's -- */
 /* -- Main Styling Start... -- */
+/* line 29, /Users/cmilicia/mole-game/assets/styles.scss */
 body {
   background-color: #ebebeb;
   font-family: 'Raleway', verdana, sans-serif;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
+  /* line 29, /Users/cmilicia/mole-game/assets/styles.scss */
   body {
     background-color: white;
   }
 }
 
 @media (max-width: 767px) {
+  /* line 29, /Users/cmilicia/mole-game/assets/styles.scss */
   body {
     background-color: white;
   }
 }
 
+/* line 33, /Users/cmilicia/mole-game/assets/styles.scss */
 header {
   margin: 0 auto 5%;
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
+  /* line 33, /Users/cmilicia/mole-game/assets/styles.scss */
   header {
     margin-bottom: 2%;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  /* line 33, /Users/cmilicia/mole-game/assets/styles.scss */
   header {
     margin-bottom: 4%;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
+  /* line 33, /Users/cmilicia/mole-game/assets/styles.scss */
   header {
     margin-bottom: 3%;
   }
 }
 
+/* line 37, /Users/cmilicia/mole-game/assets/styles.scss */
 header h1 {
   font-size: 1.5em;
   text-align: center;
@@ -50,11 +58,13 @@ header h1 {
 }
 
 @media (max-width: 767px) {
+  /* line 37, /Users/cmilicia/mole-game/assets/styles.scss */
   header h1 {
     font-size: 1.2em;
   }
 }
 
+/* line 41, /Users/cmilicia/mole-game/assets/styles.scss */
 footer {
   margin: 0 auto;
   font-size: .8em;
@@ -64,21 +74,26 @@ footer {
 }
 
 @media (max-width: 767px) {
+  /* line 41, /Users/cmilicia/mole-game/assets/styles.scss */
   footer {
     font-size: .6em;
   }
 }
 
+/* line 43, /Users/cmilicia/mole-game/assets/styles.scss */
 footer a {
   color: #3d9db3;
   text-decoration: none;
   pointer: cursor;
+  font-weight: bold;
 }
 
+/* line 44, /Users/cmilicia/mole-game/assets/styles.scss */
 footer a:hover {
   color: #8ad5e7;
 }
 
+/* line 48, /Users/cmilicia/mole-game/assets/styles.scss */
 .container {
   margin: 1% auto 0;
   max-width: 100%;
@@ -91,12 +106,14 @@ footer a:hover {
 }
 
 @media (min-width: 1200px) {
+  /* line 48, /Users/cmilicia/mole-game/assets/styles.scss */
   .container {
     max-width: 925px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
+  /* line 48, /Users/cmilicia/mole-game/assets/styles.scss */
   .container {
     max-width: 86%;
     border: none;
@@ -105,6 +122,7 @@ footer a:hover {
 }
 
 @media (max-width: 767px) {
+  /* line 48, /Users/cmilicia/mole-game/assets/styles.scss */
   .container {
     border: none;
     box-shadow: none;
@@ -112,6 +130,7 @@ footer a:hover {
 }
 
 @media (min-width: 1200px) {
+  /* line 62, /Users/cmilicia/mole-game/assets/styles.scss */
   .container .first, .container .second {
     width: 50%;
     float: left;
@@ -119,12 +138,14 @@ footer a:hover {
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
+  /* line 62, /Users/cmilicia/mole-game/assets/styles.scss */
   .container .first, .container .second {
     width: 100%;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  /* line 62, /Users/cmilicia/mole-game/assets/styles.scss */
   .container .first, .container .second {
     width: 50%;
     float: left;
@@ -132,12 +153,14 @@ footer a:hover {
 }
 
 @media (max-width: 767px) {
+  /* line 62, /Users/cmilicia/mole-game/assets/styles.scss */
   .container .first, .container .second {
     width: 100%;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
+  /* line 62, /Users/cmilicia/mole-game/assets/styles.scss */
   .container .first, .container .second {
     width: 50%;
     float: left;
@@ -145,16 +168,19 @@ footer a:hover {
 }
 
 @media (max-width: 767px) {
+  /* line 70, /Users/cmilicia/mole-game/assets/styles.scss */
   .container .second {
     font-size: .9em;
   }
 }
 
+/* line 74, /Users/cmilicia/mole-game/assets/styles.scss */
 .container section {
   margin: 0 auto 2em;
   width: 100%;
 }
 
+/* line 75, /Users/cmilicia/mole-game/assets/styles.scss */
 .container section h2 {
   font-size: 1.1em;
   margin-bottom: 0;
@@ -164,21 +190,25 @@ footer a:hover {
   font-weight: normal;
 }
 
+/* line 76, /Users/cmilicia/mole-game/assets/styles.scss */
 .container section ul {
   padding-left: 1em;
   margin: 1em auto 2em;
   float: left;
 }
 
+/* line 77, /Users/cmilicia/mole-game/assets/styles.scss */
 .container section h2, .container section ul {
   margin-left: 1em;
 }
 
+/* line 78, /Users/cmilicia/mole-game/assets/styles.scss */
 .container section span {
   font-size: 1.2rem;
   font-weight: bold;
 }
 
+/* line 80, /Users/cmilicia/mole-game/assets/styles.scss */
 .container section button {
   width: 100%;
   padding: 20px;
@@ -188,24 +218,29 @@ footer a:hover {
   font-size: 1em;
 }
 
+/* line 88, /Users/cmilicia/mole-game/assets/styles.scss */
 .container section button:hover {
   cursor: pointer;
 }
 
+/* line 91, /Users/cmilicia/mole-game/assets/styles.scss */
 .container section p {
   display: block;
   float: left;
   width: 100%;
 }
 
+/* line 92, /Users/cmilicia/mole-game/assets/styles.scss */
 .container section p.half {
   width: 50%;
 }
 
+/* line 93, /Users/cmilicia/mole-game/assets/styles.scss */
 .container section p.right {
   text-align: right;
 }
 
+/* line 94, /Users/cmilicia/mole-game/assets/styles.scss */
 .container section p.luck {
   color: #3d9db3;
   font-size: 1.2em;
@@ -213,24 +248,29 @@ footer a:hover {
   text-align: center;
 }
 
+/* line 95, /Users/cmilicia/mole-game/assets/styles.scss */
 .container section p.hidden {
   display: none;
 }
 
+/* line 96, /Users/cmilicia/mole-game/assets/styles.scss */
 .container section p span {
   display: inline-block;
   color: #3d9db3;
   font-size: 1.2em;
 }
 
+/* line 97, /Users/cmilicia/mole-game/assets/styles.scss */
 .container section p span.timer {
   width: 60px;
 }
 
+/* line 98, /Users/cmilicia/mole-game/assets/styles.scss */
 .container section p span.score {
   width: 20px;
 }
 
+/* line 102, /Users/cmilicia/mole-game/assets/styles.scss */
 .container section .grid {
   border: 1px solid gray;
   padding: 5px;
@@ -238,15 +278,18 @@ footer a:hover {
   background-color: white;
 }
 
+/* line 103, /Users/cmilicia/mole-game/assets/styles.scss */
 .container section .grid.stop .grid-cell {
   opacity: .25;
 }
 
+/* line 104, /Users/cmilicia/mole-game/assets/styles.scss */
 .container section .grid-row {
   float: left;
   clear: left;
 }
 
+/* line 105, /Users/cmilicia/mole-game/assets/styles.scss */
 .container section .grid-cell {
   margin: 1px;
   border: 1px solid gray;
@@ -259,6 +302,7 @@ footer a:hover {
 }
 
 @media (min-width: 1200px) {
+  /* line 105, /Users/cmilicia/mole-game/assets/styles.scss */
   .container section .grid-cell {
     width: 134px;
     height: 134px;
@@ -266,6 +310,7 @@ footer a:hover {
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
+  /* line 105, /Users/cmilicia/mole-game/assets/styles.scss */
   .container section .grid-cell {
     width: 207px;
     height: 189px;
@@ -273,6 +318,7 @@ footer a:hover {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  /* line 105, /Users/cmilicia/mole-game/assets/styles.scss */
   .container section .grid-cell {
     width: 124px;
     height: 124px;
@@ -280,6 +326,7 @@ footer a:hover {
 }
 
 @media (max-width: 767px) {
+  /* line 105, /Users/cmilicia/mole-game/assets/styles.scss */
   .container section .grid-cell {
     width: 104px;
     height: 104px;
@@ -287,20 +334,25 @@ footer a:hover {
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
+  /* line 105, /Users/cmilicia/mole-game/assets/styles.scss */
   .container section .grid-cell {
     width: 85px;
     height: 85px;
   }
 }
 
+/* line 121, /Users/cmilicia/mole-game/assets/styles.scss */
 .container section .grid-cell.active {
   background: url("assets/active.png"), white;
   background-size: contain;
   background-position: center center;
 }
 
+/* line 122, /Users/cmilicia/mole-game/assets/styles.scss */
 .container section .grid-cell.active:hover {
   cursor: pointer;
 }
 
 /* -- ...Main Styling End -- */
+
+/*# sourceMappingURL=../styles.map */
